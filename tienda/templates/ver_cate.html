@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+{% block content %}
+
+<h1>{{ categ_list.nombre}}</h1>
+
+{% for producto in categ_list.producto_set.all %}
+<h1>{{ producto.nombre}}</h1>
+{% endfor %}
+{% endblock %}
